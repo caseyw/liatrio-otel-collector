@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: caseyw-liatrio-otel-collector
+  description: The Liatrio distribution of the OpenTelemetry Collector
+
+  # Annotations Docs: https://backstage.io/docs/features/software-catalog/well-known-annotations
+  annotations:
+    github.com/project-slug: caseyw/liatrio-otel-collector
+    # grafana/dashboard-selector: "(tags @> 'backstage-test')"
+    grafana/dashboard-selector: "(title @> 'demo v4')"
+
+  # Tags Docs: https://backstage.io/docs/features/software-catalog/descriptor-format/#metadatatags-optional
+  # tags:
+  #   - example
+  #   - tag
+
+  # Links Docs: https://backstage.io/docs/features/software-catalog/descriptor-format/#links-optional
+  # links:
+  #   - url: https://example.com/user
+  #     title: Examples Users
+  #     icon: user
+  #   - url: https://example.com/group
+  #     title: Example Group
+  #     icon: group
+
+spec:
+  # https://backstage.io/docs/features/software-catalog/descriptor-format/#spectype-required
+  type: service
+  # Review lifecycle and pick one of the three that make the most sense.
+  # https://backstage.io/docs/features/software-catalog/descriptor-format/#speclifecycle-required
+  lifecycle: production
+  # Please update to include the GitHub Team name tied to this project.
+  # https://backstage.io/docs/features/software-catalog/descriptor-format/#specowner-required
+  owner: liatrio-team-members
