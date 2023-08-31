@@ -9,6 +9,7 @@ metadata:
     github.com/project-slug: caseyw/liatrio-otel-collector
     grafana/dashboard-selector: backstage-test
     grafana/overview-dashboard: 'https://liatrio.grafana.net/d/p8-fPWzIzz/demo-v4?orgId=1&kiosk'
+    grafana/tag-selector: backstage-test
 
   # Tags Docs: https://backstage.io/docs/features/software-catalog/descriptor-format/#metadatatags-optional
   # tags:
