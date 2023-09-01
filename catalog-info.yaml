@@ -7,8 +7,12 @@ metadata:
   # Annotations Docs: https://backstage.io/docs/features/software-catalog/well-known-annotations
   annotations:
     github.com/project-slug: caseyw/liatrio-otel-collector
-    grafana/dashboard-selector: backstage-test
+    # https://github.com/K-Phoen/backstage-plugin-grafana/blob/main/docs/dashboards-on-component-page.md
+    # grafana/dashboard-selector: backstage-test
+    grafana/dashboard-selector: "folderTitle == 'General'"
+    # https://github.com/K-Phoen/backstage-plugin-grafana/blob/main/docs/embed-dashboards-on-page.md
     grafana/overview-dashboard: 'https://liatrio.grafana.net/d/p8-fPWzIzz/demo-v4?orgId=1&kiosk'
+    # https://github.com/K-Phoen/backstage-plugin-grafana/blob/main/docs/alerts-on-component-page.md
     grafana/tag-selector: backstage-test
 
   # Tags Docs: https://backstage.io/docs/features/software-catalog/descriptor-format/#metadatatags-optional
